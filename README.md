@@ -1,3 +1,26 @@
+# Commands
+
+```sh
+# Initialize a new project
+cd ~/src
+npm -g update create-react-app
+create-react-app --template typescript
+
+# Setup tooling
+npm install --save-dev prettier eslint eslint-config-prettier
+touch .prettierrc.json
+touch .prettierignore
+touch .gitignore
+echo "ESLINT_NO_DEV_ERRORS=true" > .env.development
+
+# Follow instructions to setup prettier with eslint here:
+# https://github.com/prettier/eslint-plugin-prettier
+
+# Install essential packages
+npm install react-router-dom react-query @material-ui/core
+```
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
